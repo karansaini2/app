@@ -17,7 +17,7 @@ const Home = ({ isAuth }) => {
       setBlogs(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getBlogs();
-  });
+  }, [colRef]);
 
   return (
     <div className="homepage">
